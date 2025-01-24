@@ -1,0 +1,32 @@
+{
+  "name": "com.gsrikar.riskcordovasample",
+  "displayName": "RiskCordovaSample",
+  "version": "1.0.0",
+  "description": "A sample Apache Cordova application that responds to the deviceready event.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "ecosystem:cordova"
+  ],
+  "author": "Apache Cordova Team",
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "cordova-android": "^13.0.0",
+    "cordova-plugin-finbox-risk-manager": "^1.1.0",
+    "cordova-plugin-firebase-messaging": "^8.0.1",
+    "cordova-support-android-plugin": "~2.0.4"
+  },
+  "cordova": {
+    "platforms": [
+      "android"
+    ],
+    "plugins": {
+      "cordova-plugin-finbox-risk-manager": {},
+      "cordova-plugin-firebase-messaging": {
+        "ANDROID_FIREBASE_BOM_VERSION": "32.5.0"
+      }
+    }
+  }
+}
