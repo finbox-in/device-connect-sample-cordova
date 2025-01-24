@@ -1,4 +1,4 @@
-# Cordova Sample
+# DeviceConnect: Cordova Sample
 
 This is sample implementation of the DeviceConnect Cordova SDK
 
