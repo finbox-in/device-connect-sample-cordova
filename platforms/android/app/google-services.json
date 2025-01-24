@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "596192370026",
+    "project_id": "cordovarisksample",
+    "storage_bucket": "cordovarisksample.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596192370026:android:a37f97c6c72bd9fa731913",
+        "android_client_info": {
+          "package_name": "com.gsrikar.riskcordovasample"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596192370026-h3t8hnilqv686btqv576ceorj5q8fiab.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.gsrikar.riskcordovasample",
+            "certificate_hash": "47ccc0dabba9d36ac09a2d62b996d6d7c38cc367"
+          }
+        },
+        {
+          "client_id": "596192370026-975nnjfiaktv5oe8c52b8dpd7u9d97ps.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDU1OIQvN1se7eYJz0rG-5Lj6cxZiNfTP8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596192370026-975nnjfiaktv5oe8c52b8dpd7u9d97ps.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

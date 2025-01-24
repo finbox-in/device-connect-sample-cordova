@@ -1,0 +1,36 @@
+Properties properties = new Properties()
+properties.load(project.rootProject.file('local.properties').newDataInputStream())
+def awsKey = properties.getProperty('ACCESS_KEY')
+def awsSecret = properties.getProperty('SECRET_KEY')
+def riskVersion = properties.getProperty('DC_SDK_VERSION')
+def commonVersion = properties.getProperty('COMMON_SDK_VERSION')
+def commonFlavor = properties.getProperty('COMMON_FLAVOR')
+def riskFlavor = properties.getProperty('DC_FLAVOR')
+def loggerVersion = properties.getProperty('LOGGER_SDK_VERSION')
+
+repositories {
+    google()
+    jcenter()
+    maven {
+        url "s3://risk-manager-android-sdk/artifacts"
+        credentials(AwsCredentials) {
+            accessKey = awsKey 
+            secretKey = awsSecret
+        }
+        content {
+            includeGroup("in.finbox")
+        }
+    }
+}
+
+dependencies {
+    implementation("in.finbox:mobileriskmanager:${riskVersion}:${riskFlavor}-release@aar") {
+        transitive = true
+    }
+    implementation("in.finbox:common:${commonVersion}:${commonFlavor}-release@aar") {
+        transitive = true
+    }
+    implementation("in.finbox:logger:${loggerVersion}:parent-release@aar") {
+        transitive = true
+    }
+}
