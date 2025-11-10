@@ -2,6 +2,11 @@
 
 This is sample implementation of the DeviceConnect Cordova SDK
 
+## DeviceConnect SDK
+FinBox DeviceConnect is an SDK that seamlessly integrates into lenders' frontend apps/websites, facilitating secure data sharing and providing valuable predictive insights to support informed decision-making.
+
+DeviceConnect Cordova SDK is available on [NPM](https://www.npmjs.com/package/cordova-plugin-finbox-risk-manager)
+
 ## Setup
 
 ### Download the SDK
